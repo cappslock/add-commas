@@ -1,0 +1,26 @@
+{
+  "name": "add-commas",
+  "version": "0.0.0",
+  "description": "Add commas to a number",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec --ui tdd test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cappslock/add-commas.git"
+  },
+  "keywords": [
+    "utility",
+    "formatting"
+  ],
+  "author": "Eric Capps",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cappslock/add-commas/issues"
+  },
+  "homepage": "https://github.com/cappslock/add-commas",
+  "devDependencies": {
+    "mocha": "^1.19.0"
+  }
+}
