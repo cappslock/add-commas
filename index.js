@@ -1,7 +1,7 @@
 module.exports = function (n) {
     var nInt = parseInt(n, 10);
 
-    if (nInt === NaN) {
+    if (Number.isNaN(nInt)) {
         throw new Error('not a number');
     }
     else if (nInt.toString() !== n.toString()) {
