@@ -1,7 +1,9 @@
+var isNaN = require('lodash.isnan');
+
 module.exports = function (n) {
     var nInt = parseInt(n, 10);
 
-    if (Number.isNaN(nInt)) {
+    if (isNaN(nInt)) {
         throw new Error('not a number');
     }
     else if (nInt.toString() !== n.toString()) {

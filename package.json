@@ -22,5 +22,8 @@
   "homepage": "https://github.com/cappslock/add-commas",
   "devDependencies": {
     "mocha": "^1.19.0"
+  },
+  "dependencies": {
+    "lodash.isnan": "^2.4.1"
   }
 }
