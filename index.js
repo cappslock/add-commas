@@ -1,4 +1,4 @@
-var isNaN = require('lodash.isnan');
+var isNaN = require('is-nan');
 
 module.exports = function (n) {
     var nInt = parseInt(n, 10);
@@ -19,6 +19,6 @@ module.exports = function (n) {
         while (rgx.test(x1)) {
             x1 = x1.replace(rgx, '$1' + ',' + '$2');
         }
-        return x1 + x2; 
+        return x1 + x2;
     }
 };
