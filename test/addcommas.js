@@ -21,14 +21,14 @@ test('works with strings', function () {
     assert.equal(addCommas('1234567'), '1,234,567', 'seven digits should match');
 });
 
-test('fails on decimals', function () {
-    assert.throws(function () {
-        addCommas(123.45);
-    }, 'should throw error on decimals');
-
-    assert.throws(function () {
-        addCommas('123.45');
-    }, 'should throw error on decimal strings');
+test('works with decimals', function () {
+    assert.equal(addCommas('1.0123'), '1.0123', 'single digits with decimals should match');
+    assert.equal(addCommas('12.0123'), '12.0123', 'double digits with decimals should match');
+    assert.equal(addCommas('123.0123'), '123.0123', 'triple digits with decimals should match');
+    assert.equal(addCommas('1234.0123'), '1,234.0123', 'four digits with decimals should match');
+    assert.equal(addCommas('12345.0123'), '12,345.0123', 'five digits with decimals should match');
+    assert.equal(addCommas('123456.0123'), '123,456.0123', 'six digits with decimals should match');
+    assert.equal(addCommas('1234567.0123'), '1,234,567.0123', 'seven digits with decimals should match');
 });
 
 test('fails on null or undefined', function () {
@@ -36,9 +36,3 @@ test('fails on null or undefined', function () {
         addCommas();
     });
 });
-
-test('fails on non-numeric strings', function () {
-    assert.throws(function () {
-        addCommas('divide by dogs');
-    });
-})
