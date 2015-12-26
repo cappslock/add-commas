@@ -22,8 +22,5 @@
   "homepage": "https://github.com/cappslock/add-commas",
   "devDependencies": {
     "mocha": "^1.19.0"
-  },
-  "dependencies": {
-    "is-nan": "^1.0.1"
   }
 }
