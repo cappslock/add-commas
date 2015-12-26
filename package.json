@@ -1,6 +1,6 @@
 {
   "name": "add-commas",
-  "version": "0.0.5",
+  "version": "1.0.0",
   "description": "Add commas to a number",
   "main": "index.js",
   "scripts": {
