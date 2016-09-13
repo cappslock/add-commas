@@ -8,16 +8,16 @@ Core logic adapted from [this answer on Stack Overflow](http://stackoverflow.com
 
 ## Usage
 
-```
-var addCommas = require('add-commas');
+```js
+import addCommas from 'add-commas'
 
 // yes
-addCommas(12345);    // 12,345
-addCommas('12345');  // 12,345
-addCommas(12345.67); // 12,345.67
+addCommas(12345)    // => 12,345
+addCommas('12345')  // => 12,345
+addCommas(12345.67) // => 12,345.67
 
 // no
-addCommas();        // throws Error
+addCommas()         // => throws Error
 ```
 
 ## License
