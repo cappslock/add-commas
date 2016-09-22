@@ -4,21 +4,20 @@ Add commas to a number
 
 ## Credit
 
-Core logic adapted from [this thread on Stack Overflow](http://stackoverflow.com/questions/14636536/how-to-check-if-a-variable-is-an-integer-in-javascript)
+Core logic adapted from [this answer on Stack Overflow](http://stackoverflow.com/a/2901298/64372)
 
 ## Usage
 
-```
-var addCommas = require('add-commas');
+```js
+import addCommas from 'add-commas'
 
 // yes
-addCommas(12345);   // 12,345
-addCommas('12345'); // 12,345
+addCommas(12345)    // => 12,345
+addCommas('12345')  // => 12,345
+addCommas(12345.67) // => 12,345.67
 
 // no
-addCommas();        // throws Error
-addCommas(123.45)   // throws Error
-addCommas('dogs')   // throws Error
+addCommas()         // => throws Error
 ```
 
 ## License

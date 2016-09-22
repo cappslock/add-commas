@@ -1,6 +1,6 @@
 {
   "name": "add-commas",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "description": "Add commas to a number",
   "main": "index.js",
   "scripts": {
@@ -22,8 +22,5 @@
   "homepage": "https://github.com/cappslock/add-commas",
   "devDependencies": {
     "mocha": "^1.19.0"
-  },
-  "dependencies": {
-    "is-nan": "^1.0.1"
   }
 }
